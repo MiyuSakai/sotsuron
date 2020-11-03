@@ -1,16 +1,5 @@
 var repo_site ="https://MiyuSakai.github.io/sotsuron/"
 
-//実験内容についてのメモ
-//20200311調査で使用うる
-
-//firebaseの設定
-// Your web app's Firebase configuration
-var firebaseConfig = {
-    
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
 
 /*ID(日付時刻_８桁の乱数)の設定*/
 // 乱数
@@ -43,18 +32,7 @@ jsPsych.data.addProperties({
   condition: random
 });
 
-var ic = {
-    type: 'survey-multi-select',
-    questions: [{
-        prompt: "<span style = 'font-size: 14pt;'><b>以上の内容をよく読んで，理解した上で実験参加に同意いただける方はチェックをお願いします。同意されない方は，ウィンドウを閉じてください。</b></span>",
-        options: ["<span style = 'font-size: 18pt; text-align: center;'>説明事項をよく読み，理解した上で，研究参加に同意します。</span>"],
-        required: true,
-        name: 'approval'
-    }],
-    preamble: "<div style = 'text-align: center'><h1>「価値観についての意識調査」へのご協力のお願い</h1></div>"+"<div><br></div>"+"<div style = 'font-size: 1.5em; text-align: center'><p><b>スマートフォンでは回答を完了することができません。<br><br>キーボードのあるパソコンでアクセスしてください。（ノートパソコン可）</b><p></div>"+
-    "<div style = 'font-size: 14pt; text-align: left;'><br><p>関西学院大学社会学部　清水裕士</br></br>本調査は、あなたの普段のお考えに関する調査を目的としています。 回答にはおよそ15分を必要とします。</br>回答の途中でネット接続が途切れると正常に終了できません。接続の良い場所で回答してください。</p>"+"<p> 回答はすべて匿名のものとして扱いますので、個人情報が公になることもありません。</br></br>本調査に関する質問や、何らかの問題が生じた場合は調査者までご連絡ください。</p></div>",
-    button_label: '次へ'
-};
+
 
 var pc_check = {
   type: "html-keyboard-response",
@@ -62,63 +40,9 @@ var pc_check = {
   choices: ["space"]
 };
 
-var question_inst01 = {
-    type: 'instructions',
-    pages: ["<p>この調査では前半が質問パートでと後半が実験パートになっています。</p>"+"<p>最初にあなた自身のことについて質問します。</br>「次へ」をクリックすると質問文が表示されます。</p>"
-    ],
-    allow_backward: false,
-    show_clickable_nav: true,
-    button_label_next: "次へ"
-    
-};
 
-//基本情報の入力。性別・年齢・IDなどの入力
-var page_sex = ["男性", "女性", "その他", "答えたくない"];
 
-var form_trial = {
-  timeline:[
-    {
-      type: "survey-text",
-      questions: [
-        {prompt: "あなたの年齢についてお答えください。半角数字のみで入力してください（「歳・才」は不要です。）", name: 'Age', required:"True"}
-      ],
-      button_label: "次へ"
-    },
-    {
-      type:"survey-multi-choice",
-      questions: [
-        {prompt: "あなた自身の性別を選択してください", name: 'sex', options: page_sex, required:"True"
-    }],
-    button_label: "次へ"
-    }
-  ]
-};
 
-var scale_01 = [
-  "まったく当てはまらない", 
-  "あまり当てはまらない", 
-  "どちらともいえない", 
-  "やや当てはまる",
-  "非常に当てはまる"
-];
-
-var question_se = {
-  type: 'survey-likert',
-  questions: [
-    {prompt: "少なくとも人並みには、価値のある人間である", labels: scale_01, required: "True"},
-    {prompt: "色々な良い素質をもっている", labels: scale_01, required: "True"},
-    {prompt: "敗北者だと思うことがよくある", labels: scale_01, required: "True"},
-    {prompt: "物事を人並みには、うまくやれる", labels: scale_01, required: "True"},
-    {prompt: "自分には、自慢できるところがあまりない", labels: scale_01, required: "True"},
-    {prompt: "自分に対して肯定的である", labels: scale_01, required: "True"},
-    {prompt: "だいたいにおいて、自分に満足している", labels: scale_01, required: "True"},
-    {prompt: "もっと自分自身を尊敬できるようになりたい", labels: scale_01, required: "True"},
-    {prompt: "自分は全くだめな人間だと思うことがある", labels: scale_01, required: "True"},
-    {prompt: "何かにつけて、自分は役に立たない人間だと思う", labels: scale_01, required: "True"}
-    ],
-    button_label: "次へ",
-    preamble: "<h3>次の特徴のそれぞれについて、あなた自身にどの程度当てはまるかをお答え下さい。</br> 他からどう見られているかではなく、あなたが、あなた自身をどのように 思っているかをありのままにお答え下さい。</h3>"+"<p>一番下に「次へ」のボタンがあるので、スクロールし、全て回答し終わったら次の課題へ進んで下さい</p>"
-};
 
 var nameget_q1 = {
   type: "survey-text",
