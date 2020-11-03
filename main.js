@@ -1,4 +1,4 @@
-var repo_site ="https://<MiyuSakai>.github.io/sotsuron/"
+var repo_site ="https://MiyuSakai.github.io/sotsuron/"
 
 //実験内容についてのメモ
 //20200311調査で使用うる
