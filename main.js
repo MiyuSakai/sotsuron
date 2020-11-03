@@ -284,7 +284,7 @@ var trial01_main01 = {
       display_feedback: true,
       left_category_key: 'E',
       right_category_key: 'I',
-      left_category_label: ["成功</br></br>自分"],
+      left_category_label: ["成功</br></br>自己"],
       right_category_label: ["失敗"],
       response_ends_trial: true
     }
