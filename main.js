@@ -154,8 +154,8 @@ var trial01_prac01 = {
       display_feedback: true,
       left_category_key: 'E',
       right_category_key: 'I',
-      left_category_label: ["成功</br></br>自己"],
-      right_category_label: ["失敗"],
+      left_category_label: ["できる</br></br>自己"],
+      right_category_label: ["できない"],
       response_ends_trial: true
     }
     ],  
@@ -172,9 +172,9 @@ var trial01_prac01 = {
     {stimulus: "不可能", stim_key_association: "right"},
     {stimulus: "可能", stim_key_association: "left"},
     {stimulus: "達成", stim_key_association: "left"},
-    {stimulus: "できる", stim_key_association: "left"},
+    {stimulus: "成功", stim_key_association: "left"},
     {stimulus: "自分", stim_key_association: "left"},
-    {stimulus: "できない", stim_key_association: "right"},
+    {stimulus: "失敗", stim_key_association: "right"},
     {stimulus: "やれる", stim_key_association: "left"},
     {stimulus: function(){
       var named = jsPsych.data.get().last(1).values()[0].name02;
@@ -194,13 +194,13 @@ var trial01_prac01 = {
       var nameu = jsPsych.data.get().last(1).values()[0].name01;
       return nameu;
     }, stim_key_association: "left"},
-    {stimulus: "できない", stim_key_association: "right"},
+    {stimulus: "失敗", stim_key_association: "right"},
     {stimulus: "私", stim_key_association: "left"},
     {stimulus: "やれる", stim_key_association: "left"},
     {stimulus: "無理", stim_key_association: "right"},
     {stimulus: "私", stim_key_association: "left"},
-    {stimulus: "できる", stim_key_association: "left"},
-    {stimulus: "できない", stim_key_association: "right"},
+    {stimulus: "成功", stim_key_association: "left"},
+    {stimulus: "失敗", stim_key_association: "right"},
     {stimulus: "無理", stim_key_association: "right"}
     ],
   repetitions: 1
@@ -220,8 +220,8 @@ var trial01_prac02 = {
       display_feedback: true,
       left_category_key: 'E',
       right_category_key: 'I',
-      left_category_label: ["成功"],
-      right_category_label: ["失敗</br></br>自己"],
+      left_category_label: ["できる"],
+      right_category_label: ["できない</br></br>自己"],
       response_ends_trial: true
     }
     ],  
@@ -232,20 +232,20 @@ var trial01_prac02 = {
       return nameu;
     }, stim_key_association: "right"},
   {stimulus: "私", stim_key_association: "right"},
-  {stimulus: "できる", stim_key_association: "left"},
+  {stimulus: "成功", stim_key_association: "left"},
   {stimulus: "不可能", stim_key_association: "right"},
   {stimulus: "やれない", stim_key_association: "right"},
-  {stimulus: "できない", stim_key_association: "right"},
+  {stimulus: "失敗", stim_key_association: "right"},
   {stimulus: "自分", stim_key_association: "right"},
-  {stimulus: "できる", stim_key_association: "left"},
+  {stimulus: "成功", stim_key_association: "left"},
   {stimulus: "無理", stim_key_association: "right"},
   {stimulus: "可能", stim_key_association: "left"},
   {stimulus: "やれない", stim_key_association: "right"},
   {stimulus: "不可能", stim_key_association: "right"},
   {stimulus: "達成", stim_key_association: "left"},
-  {stimulus: "できない", stim_key_association: "right"},
+  {stimulus: "失敗", stim_key_association: "right"},
   {stimulus: "達成", stim_key_association: "left"},
-  {stimulus: "できる", stim_key_association: "left"},
+  {stimulus: "成功", stim_key_association: "left"},
   {stimulus: function(){
       var nameu = jsPsych.data.get().last(1).values()[0].name01;
       return nameu;
@@ -284,14 +284,14 @@ var trial01_main01 = {
       display_feedback: true,
       left_category_key: 'E',
       right_category_key: 'I',
-      left_category_label: ["成功</br></br>自己"],
-      right_category_label: ["失敗"],
+      left_category_label: ["できる</br></br>自己"],
+      right_category_label: ["できない"],
       response_ends_trial: true
     }
     ],  
   //IATで使う刺激
   timeline_variables: [
-  {stimulus: "できる", stim_key_association: "left"},
+  {stimulus: "成功", stim_key_association: "left"},
   {stimulus: function(){
       var named = jsPsych.data.get().last(1).values()[0].name02;
       return named;
@@ -307,7 +307,7 @@ var trial01_main01 = {
   {stimulus: "不可能", stim_key_association: "right"},
   {stimulus: "達成", stim_key_association: "left"},
   {stimulus: "無理", stim_key_association: "right"},
-  {stimulus: "できない", stim_key_association: "right"},
+  {stimulus: "失敗", stim_key_association: "right"},
    {stimulus: "可能", stim_key_association: "left"},
    {stimulus: "無理", stim_key_association: "right"},
    {stimulus: function(){
@@ -320,22 +320,22 @@ var trial01_main01 = {
     }, stim_key_association: "left"},
   {stimulus: "私", stim_key_association: "left"},
   {stimulus: "不可能", stim_key_association: "right"},
-  {stimulus: "できない", stim_key_association: "right"},
+  {stimulus: "失敗", stim_key_association: "right"},
   {stimulus: "やれる", stim_key_association: "left"},
   {stimulus: "やれない", stim_key_association: "right"},
   {stimulus: "不可能", stim_key_association: "right"},
-  {stimulus: "できない", stim_key_association: "right"},
+  {stimulus: "失敗", stim_key_association: "right"},
   {stimulus: "自分", stim_key_association: "left"},
   {stimulus: "無理", stim_key_association: "right"},
   {stimulus: "可能", stim_key_association: "left"},
   {stimulus: "無理", stim_key_association: "right"},
-  {stimulus: "できない", stim_key_association: "right"},
-  {stimulus: "できる", stim_key_association: "left"},
+  {stimulus: "失敗", stim_key_association: "right"},
+  {stimulus: "成功", stim_key_association: "left"},
   {stimulus: "自分", stim_key_association: "left"},
-  {stimulus: "できない", stim_key_association: "right"},
+  {stimulus: "失敗", stim_key_association: "right"},
   {stimulus: "不可能", stim_key_association: "right"},
   {stimulus: "自分", stim_key_association: "left"},
-  {stimulus: "できる", stim_key_association: "left"},
+  {stimulus: "成功", stim_key_association: "left"},
   {stimulus: function(){
       var named = jsPsych.data.get().last(1).values()[0].name02;
       return named;
@@ -343,7 +343,7 @@ var trial01_main01 = {
   {stimulus: "不可能", stim_key_association: "right"},
   {stimulus: "達成", stim_key_association: "left"},
   {stimulus: "やれない", stim_key_association: "right"},
-  {stimulus: "できない", stim_key_association: "right"},
+  {stimulus: "失敗", stim_key_association: "right"},
   {stimulus: "私", stim_key_association: "left"},
   {stimulus: "やれない", stim_key_association: "right"},
   {stimulus: "自分", stim_key_association: "left"},
@@ -356,7 +356,7 @@ var trial01_main01 = {
   {stimulus: "無理", stim_key_association: "right"}, 
   {stimulus: "やれない", stim_key_association: "right"},
   {stimulus: "やれる", stim_key_association: "left"},
-  {stimulus: "できない", stim_key_association: "right"},
+  {stimulus: "失敗", stim_key_association: "right"},
   {stimulus: function(){
       var nameu = jsPsych.data.get().last(1).values()[0].name01;
       return nameu;
@@ -369,7 +369,7 @@ var trial01_main01 = {
   {stimulus: "可能", stim_key_association: "left"},
   {stimulus: "やれない", stim_key_association: "right"},
   {stimulus: "自分", stim_key_association: "left"},
-  {stimulus: "できない", stim_key_association: "right"},
+  {stimulus: "失敗", stim_key_association: "right"},
   {stimulus: "達成", stim_key_association: "left"},
   {stimulus: "無理", stim_key_association: "right"},
   {stimulus: "私", stim_key_association: "left"},
@@ -382,7 +382,7 @@ var trial01_main01 = {
       var named = jsPsych.data.get().last(1).values()[0].name02;
       return named;
     }, stim_key_association: "left"},
-  {stimulus: "できる", stim_key_association: "left"},
+  {stimulus: "成功", stim_key_association: "left"},
   {stimulus: "可能", stim_key_association: "left"},
   {stimulus: "やれる", stim_key_association: "left"},
   {stimulus: "無理", stim_key_association: "right"},
@@ -391,7 +391,7 @@ var trial01_main01 = {
       var nameu = jsPsych.data.get().last(1).values()[0].name01;
       return nameu;
     }, stim_key_association: "left"},
-  {stimulus: "できる", stim_key_association: "left"},
+  {stimulus: "成功", stim_key_association: "left"},
   {stimulus: "やれない", stim_key_association: "right"}
     ],
   repetitions: 1
@@ -411,8 +411,8 @@ var trial01_main02 = {
       display_feedback: true,
       left_category_key: 'E',
       right_category_key: 'I',
-      left_category_label: ["成功"],
-      right_category_label: ["失敗</br></br>自己"],
+      left_category_label: ["できる"],
+      right_category_label: ["できない</br></br>自己"],
       response_ends_trial: true
     }
     ],  
@@ -425,14 +425,14 @@ var trial01_main02 = {
       return named;
     }, stim_key_association: "right"},
     {stimulus: "無理", stim_key_association: "right"},
-    {stimulus: "できる", stim_key_association: "left"},
+    {stimulus: "成功", stim_key_association: "left"},
     {stimulus: "不可能", stim_key_association: "right"},
     {stimulus: "達成", stim_key_association: "left"},
     {stimulus: function(){
       var nameu = jsPsych.data.get().last(1).values()[0].name01;
       return nameu;
     }, stim_key_association: "right"},
-    {stimulus: "できる", stim_key_association: "left"},
+    {stimulus: "成功", stim_key_association: "left"},
     {stimulus: "無理", stim_key_association: "right"},
     {stimulus: "やれる", stim_key_association: "left"},
     {stimulus: "やれない", stim_key_association: "right"},
@@ -459,10 +459,10 @@ var trial01_main02 = {
     {stimulus: "可能", stim_key_association: "left"},
     {stimulus: "不可能", stim_key_association: "right"},
     {stimulus: "自分", stim_key_association: "right"},
-    {stimulus: "できる", stim_key_association: "left"},
+    {stimulus: "成功", stim_key_association: "left"},
     {stimulus: "達成", stim_key_association: "left"},
     {stimulus: "不可能", stim_key_association: "right"},
-    {stimulus: "できない", stim_key_association: "right"},
+    {stimulus: "失敗", stim_key_association: "right"},
     {stimulus: "やれる", stim_key_association: "left"},
      {stimulus: function(){
       var named = jsPsych.data.get().last(1).values()[0].name02;
@@ -470,9 +470,9 @@ var trial01_main02 = {
     }, stim_key_association: "right"},
     {stimulus: "私", stim_key_association: "right"},
     {stimulus: "可能", stim_key_association: "left"},
-    {stimulus: "できない", stim_key_association: "right"},
+    {stimulus: "失敗", stim_key_association: "right"},
     {stimulus: "自分", stim_key_association: "right"},
-    {stimulus: "できる", stim_key_association: "left"},
+    {stimulus: "成功", stim_key_association: "left"},
     {stimulus: "自分", stim_key_association: "right"},
     {stimulus: "不可能", stim_key_association: "right"},
     {stimulus: "私", stim_key_association: "right"},
@@ -482,8 +482,8 @@ var trial01_main02 = {
       var nameu = jsPsych.data.get().last(1).values()[0].name01;
       return nameu;
     }, stim_key_association: "right"},
-    {stimulus: "できない", stim_key_association: "right"},
-    {stimulus: "できる", stim_key_association: "left"},
+    {stimulus: "失敗", stim_key_association: "right"},
+    {stimulus: "成功", stim_key_association: "left"},
     {stimulus: "達成", stim_key_association: "left"},
     {stimulus: function(){
       var named = jsPsych.data.get().last(1).values()[0].name02;
@@ -491,21 +491,21 @@ var trial01_main02 = {
     }, stim_key_association: "right"},
     {stimulus: "やれる", stim_key_association: "left"},
     {stimulus: "自分", stim_key_association: "right"},
-    {stimulus: "できない", stim_key_association: "right"},
+    {stimulus: "失敗", stim_key_association: "right"},
     {stimulus: "可能", stim_key_association: "left"},
-    {stimulus: "できる", stim_key_association: "left"},
+    {stimulus: "成功", stim_key_association: "left"},
     {stimulus: function(){
       var nameu = jsPsych.data.get().last(1).values()[0].name01;
       return nameu;
     }, stim_key_association: "right"},
-    {stimulus: "できる", stim_key_association: "left"},
+    {stimulus: "成功", stim_key_association: "left"},
     {stimulus: "やれない", stim_key_association: "right"},
     {stimulus: "達成", stim_key_association: "left"},
     {stimulus: "やれない", stim_key_association: "right"},
     {stimulus: "やれる", stim_key_association: "left"},
     {stimulus: "可能", stim_key_association: "left"},
     {stimulus: "無理", stim_key_association: "right"},
-    {stimulus: "できる", stim_key_association: "left"},
+    {stimulus: "成功", stim_key_association: "left"},
     {stimulus: function(){
       var named = jsPsych.data.get().last(1).values()[0].name02;
       return named;
@@ -518,7 +518,7 @@ var trial01_main02 = {
     }, stim_key_association: "right"},
     {stimulus: "可能", stim_key_association: "left"},
     {stimulus: "私", stim_key_association: "right"},
-    {stimulus: "できない", stim_key_association: "right"},
+    {stimulus: "失敗", stim_key_association: "right"},
     {stimulus: "達成", stim_key_association: "left"},
     {stimulus: "無理", stim_key_association: "right"}
     ],
