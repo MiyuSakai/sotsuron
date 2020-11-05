@@ -194,7 +194,7 @@ var trial01_prac01 = {
       var nameu = jsPsych.data.get().last(1).values()[0].name01;
       return nameu;
     }, stim_key_association: "left"},
-    {stimulus: "可能", stim_key_association: "right"},
+    {stimulus: "できない", stim_key_association: "right"},
     {stimulus: "私", stim_key_association: "left"},
     {stimulus: "やれる", stim_key_association: "left"},
     {stimulus: "無理", stim_key_association: "right"},
